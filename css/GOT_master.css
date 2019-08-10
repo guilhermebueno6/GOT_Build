@@ -36,7 +36,7 @@ main {
 	overflow:hidden;
 }
 
-#houseImages {right:0px; position:relative; width:4000px; transition: all .5s; }
+#houseImages {right:0px; position:relative; width:5400px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -49,7 +49,7 @@ main {
 }
 
 .house-info{
-  
+
   color: white;
   width: 75%;
   font-size: 1.5em;
@@ -89,6 +89,15 @@ main {
 
 .arryn { background-position:-253px -54px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.frey{background-position: -304px -54px;}
+.frey:hover{background-position: -304px 0px;}
+
+.targaryen{background-position: -408px -54px;}
+.targaryen:hover{background-position: -408px 0px;}
+
+.tyrell{background-position: -356px -54px;}
+.tyrell:hover{background-position: -356px 0px;}
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -120,13 +129,55 @@ main {
 }
 
 .close-lightbox{
+  text-decoration: none;
+  color: white;
+  margin:10px 10px 0 0;
   float: right;
   right: 20px;
 }
 
 
 video {
-	width: 70%;
+	width: 50%;
 	margin: 8% auto 8% auto;
 	border: thin solid #949393;
 }
+
+progress {
+      color: green;
+      font-size: 12px;
+      width: 220px;
+      height: 16px;
+      border: none;
+      margin-right: 10px;
+      background: #434343;
+      border-radius: 9px;
+      vertical-align: middle;
+    }
+    progress::-moz-progress-bar {
+      color:green;
+      background:#434343;
+    }
+
+    progress[value]::-webkit-progress-bar {
+      background-color: #434343;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+
+    progress[value]::-webkit-progress-value {
+      background-color: green;
+    }
+
+  .play{
+    width:20px;
+    height: 20px;
+    background-image: url(../images/play.svg);
+  }
+
+  .pause{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/pause.svg);
+
+  }
